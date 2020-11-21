@@ -24,3 +24,12 @@ group :bridgetown_plugins do
   gem "bridgetown-seo-tag", "~> 3.0"
   gem 'bridgetown-feed'
 end
+
+group :test, optional: true do
+  gem "nokogiri"
+  gem "minitest"
+  gem "minitest-profile"
+  gem "minitest-reporters"
+  gem "shoulda"
+  gem "rails-dom-testing"
+end
