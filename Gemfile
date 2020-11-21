@@ -22,4 +22,5 @@ group :bridgetown_plugins do
   gem "bulmatown", "~> 1.0"
   gem "bridgetown-quick-search", "~> 1.0"
   gem "bridgetown-seo-tag", "~> 3.0"
+  gem 'bridgetown-feed'
 end
