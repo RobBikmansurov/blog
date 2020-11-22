@@ -8,3 +8,13 @@ yarn start
 ## Feed plugin
 
 `gem 'bridgetown-feed'`
+
+
+
+# deploy
+
+```
+yarn build
+rsync -vaz output/ srv1:/var/www/html/bikmansurov/blog
+```
+
