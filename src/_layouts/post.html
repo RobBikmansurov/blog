@@ -2,4 +2,23 @@
 layout: bulmatown/post
 ---
 
-{{ content }}
+<article class="container article">
+  <header class="text-center mb-6">
+    <h1 class="mb-1">{{ page.title }}</h1>
+    <p class="text-sm text-gray-muted">
+      Posted on
+      <time  datetime="{{ page.date | date: "%Y-%m-%d" }}">
+        {% assign d = page.date | date: "%-d" %}
+        {{ page.date | date: "%B" }}
+        {% case d %}
+          {% when '1' or '21' or '31' %}{{ d }}st,
+          {% when '2' or '22' %}{{ d }}nd,
+          {% when '3' or '23' %}{{ d }}rd,
+          {% else %}{{ d }}th,
+        {% endcase %}
+        {{ page.date | date: "%Y" }}
+      </time>
+    </p>
+  </header>
+
+  {{ content }}

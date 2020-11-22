@@ -1,3 +1,13 @@
 $theme_variation: fuchsia;
 
+$code-background: #fcf9f0;
+.has-background-code {
+  background-color: $code-background;
+}
+
+$title-weight: 900 !important;
+
+$family-monospace: ui-monospace, monospace;
+$family-serif: ui-serif, Georgia, serif;
+
 @import "~bulmatown/frontend/styles"
